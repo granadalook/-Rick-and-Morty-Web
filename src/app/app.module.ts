@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CharectersModuleModule } from './components/charecters-module/charecters-module.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    HttpClientModule,
+    CharectersModuleModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
