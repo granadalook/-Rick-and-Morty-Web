@@ -1,0 +1,25 @@
+<div class="m-3 d-flex justify-content-center">
+  <button
+    (click)="allCharacters()"
+    type="button"
+    class="btn btn-dark fs-3 btn btn-outline-warning"
+  >
+    All the characters
+  </button>
+</div>
+<section>
+  <ng-container *ngFor="let character of characters">
+    <div class="card" style="width: 18rem">
+      <img [src]="character.image" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">NOMBRE : {{ character.name }}</h5>
+        <h5 class="card-title">{{ character.status }}</h5>
+        <h5 class="card-title">{{ character.species }}</h5>
+        <h5 class="card-title">{{ character.gender }}</h5>
+        <h5 class="card-title">{{ character.created }}</h5>
+
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </ng-container>
+</section>
