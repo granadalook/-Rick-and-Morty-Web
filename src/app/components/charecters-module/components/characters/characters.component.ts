@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Result, Rickandmorty } from 'src/app/characters.model';
+import { Result, Rickandmorty } from 'src/app/models/characters.model';
 import { ChatactersService } from 'src/app/core/services/chatacters.service';
 
 @Component({
